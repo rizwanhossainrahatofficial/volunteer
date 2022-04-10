@@ -8,7 +8,7 @@ const RegisteredEvent = () => {
     const[volunteers,setVolunteers]=useState([]) ;
     const navigate=useNavigate()
     useEffect(()=>{
-        fetch('http://localhost:5000/event')
+        fetch('https://vast-fortress-79827.herokuapp.com/event')
         .then(res=>res.json())
         .then(data=>setVolunteers(data))
     },[])

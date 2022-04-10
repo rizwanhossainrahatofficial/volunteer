@@ -10,7 +10,7 @@ const Event = () => {
     const [event,setevent]=useState({})
     
     useEffect(()=>{
-        fetch(`http://localhost:5000/events/${id}`)
+        fetch(`https://vast-fortress-79827.herokuapp.com/${id}`)
         .then(res=>res.json())
         .then(data=>setevent(data))
     },[])
@@ -18,7 +18,7 @@ const Event = () => {
     const { register, formState: { errors }, handleSubmit ,reset} = useForm();
     const onSubmit = data =>{ 
         console.log(data)
-    axios.post('http://localhost:5000/events',data)
+    axios.post('https://vast-fortress-79827.herokuapp.com/events',data)
        
         .then(res=>{
             console.log(res)

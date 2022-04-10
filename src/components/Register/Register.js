@@ -12,7 +12,7 @@ const Register = () => {
     const { register, formState: { errors }, handleSubmit ,reset} = useForm();
     const onSubmit = data =>{console.log(data)
        
-        axios.post('http://localhost:5000/events',data)
+        axios.post('https://vast-fortress-79827.herokuapp.com/events',data)
            
             .then(res=>{
                 console.log(res)
