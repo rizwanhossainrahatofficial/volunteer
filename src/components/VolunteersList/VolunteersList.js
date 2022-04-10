@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ListGroup } from 'react-bootstrap';
+import { Button, ListGroup } from 'react-bootstrap';
 
 const VolunteersList = (props) => {
     const {name,email,date,eventName}=props.volunteer
@@ -16,6 +17,7 @@ const VolunteersList = (props) => {
   </ListGroup.Item>
   <ListGroup.Item as="li">Event Name:{eventName}</ListGroup.Item>
 </ListGroup>
+
         </div>
     );
 };

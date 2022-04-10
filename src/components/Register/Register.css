@@ -1,0 +1,13 @@
+.form form{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form input ,textarea{
+    width: 40%;
+    line-height: 50px;
+}
+.form form button{
+    background-color: aqua;
+}

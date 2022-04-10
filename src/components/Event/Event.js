@@ -49,7 +49,7 @@ const Event = () => {
       {/* register with validation */}
       <input type="date" {...register("date")}   defaultValue="" placeholder="Date"/>
       
-      <input  {...register("eventName")}  defaultValue={event.name}  placeholder="Event name"/>
+      <input  type='name' defaultValue={event.name}  {...register("eventName")}   placeholder="Event name"/>
       {/* register with validation and error message */}
     
       
